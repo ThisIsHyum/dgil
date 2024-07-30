@@ -16,10 +16,11 @@ import (
 )
 ```
 
-Create new object inviteLogger with session
+open session and create object inviteLogger
 
 ```go
 session, err := discordgo.New("Bot " + "your token here")
+sesion.Open()
 inviteLogger = dgil.NewInviteLogger(session)
 ```
 
